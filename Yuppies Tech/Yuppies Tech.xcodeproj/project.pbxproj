@@ -13,6 +13,7 @@
 		BEE54BB528092FB800C8695A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB328092FB800C8695A /* Main.storyboard */; };
 		BEE54BB728092FBA00C8695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB628092FBA00C8695A /* Assets.xcassets */; };
 		BEE54BBA28092FBA00C8695A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB828092FBA00C8695A /* LaunchScreen.storyboard */; };
+		BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BC6280939BA00C8695A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BEE54BB628092FBA00C8695A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEE54BB928092FBA00C8695A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEE54BBB28092FBA00C8695A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE54BC6280939BA00C8695A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				BEE54BAD28092FB800C8695A /* AppDelegate.swift */,
 				BEE54BAF28092FB800C8695A /* SceneDelegate.swift */,
-				BEE54BB128092FB800C8695A /* ViewController.swift */,
-				BEE54BB328092FB800C8695A /* Main.storyboard */,
-				BEE54BB628092FBA00C8695A /* Assets.xcassets */,
-				BEE54BB828092FBA00C8695A /* LaunchScreen.storyboard */,
+				BEE54BCB28093A0200C8695A /* ViewModels */,
+				BEE54BCA280939F900C8695A /* Views */,
+				BEE54BC9280939D900C8695A /* Resources */,
 				BEE54BBB28092FBA00C8695A /* Info.plist */,
 			);
 			path = "Yuppies Tech";
+			sourceTree = "<group>";
+		};
+		BEE54BC9280939D900C8695A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEE54BB328092FB800C8695A /* Main.storyboard */,
+				BEE54BB628092FBA00C8695A /* Assets.xcassets */,
+				BEE54BB828092FBA00C8695A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEE54BCA280939F900C8695A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEE54BB128092FB800C8695A /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEE54BCB28093A0200C8695A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BEE54BC6280939BA00C8695A /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				BEE54BB228092FB800C8695A /* ViewController.swift in Sources */,
 				BEE54BAE28092FB800C8695A /* AppDelegate.swift in Sources */,
+				BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */,
 				BEE54BB028092FB800C8695A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
