@@ -15,6 +15,7 @@
 		BEE54BBA28092FBA00C8695A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB828092FBA00C8695A /* LaunchScreen.storyboard */; };
 		BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BC6280939BA00C8695A /* ViewModel.swift */; };
 		BEE54BD12809461300C8695A /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BD02809461300C8695A /* SectionHeaderView.swift */; };
+		BEE54BD4280948B600C8695A /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BD3280948B600C8695A /* ItemViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BEE54BBB28092FBA00C8695A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE54BC6280939BA00C8695A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BEE54BD02809461300C8695A /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		BEE54BD3280948B600C8695A /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				BEE54BB128092FB800C8695A /* ViewController.swift */,
 				BEE54BD02809461300C8695A /* SectionHeaderView.swift */,
+				BEE54BD3280948B600C8695A /* ItemViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				BEE54BB228092FB800C8695A /* ViewController.swift in Sources */,
 				BEE54BAE28092FB800C8695A /* AppDelegate.swift in Sources */,
 				BEE54BD12809461300C8695A /* SectionHeaderView.swift in Sources */,
+				BEE54BD4280948B600C8695A /* ItemViewCell.swift in Sources */,
 				BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */,
 				BEE54BB028092FB800C8695A /* SceneDelegate.swift in Sources */,
 			);

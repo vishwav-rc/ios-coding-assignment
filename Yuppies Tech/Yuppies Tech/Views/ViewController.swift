@@ -41,7 +41,7 @@ extension ViewController: UICollectionViewDataSource {
                 ofKind: kind,
                 withReuseIdentifier: Constants.sectionHeader,
                 for: indexPath) as? SectionHeaderView else {
-            fatalError("Unexpected element kind")
+            fatalError("Unexpected header")
         }
         headerView.titleLabel?.text = viewModel.sectionHeader(section: indexPath.section)
         return headerView
@@ -57,10 +57,12 @@ extension ViewController: UICollectionViewDataSource {
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(
+        guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: Constants.cellIdentifier,
-            for: indexPath)
-        cell.backgroundColor = UIColor.green
+                for: indexPath) as? ItemViewCell else {
+            fatalError("Unexpected cell")
+        }
+        cell.imageView?.backgroundColor = .yellow
         return cell
     }
 }

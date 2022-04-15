@@ -27,13 +27,27 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="identifier" id="CNK-iq-sYu">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="identifier" id="CNK-iq-sYu" customClass="ItemViewCell" customModule="Yuppies_Tech" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AIS-Ux-k6s">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ula-Bf-uAf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ula-Bf-uAf" firstAttribute="width" secondItem="AIS-Ux-k6s" secondAttribute="width" id="J8v-cP-3fb"/>
+                                                <constraint firstItem="ula-Bf-uAf" firstAttribute="centerX" secondItem="AIS-Ux-k6s" secondAttribute="centerX" id="Tjt-Nb-TdP"/>
+                                                <constraint firstItem="ula-Bf-uAf" firstAttribute="height" secondItem="AIS-Ux-k6s" secondAttribute="height" id="fUU-fU-0TE"/>
+                                                <constraint firstItem="ula-Bf-uAf" firstAttribute="centerY" secondItem="AIS-Ux-k6s" secondAttribute="centerY" id="pHh-eg-bMx"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="ula-Bf-uAf" id="9g5-2d-0cu"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="2ZA-oY-wsc" customClass="SectionHeaderView" customModule="Yuppies_Tech" customModuleProvider="target">
