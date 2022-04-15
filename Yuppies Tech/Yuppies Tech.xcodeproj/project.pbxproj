@@ -14,6 +14,7 @@
 		BEE54BB728092FBA00C8695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB628092FBA00C8695A /* Assets.xcassets */; };
 		BEE54BBA28092FBA00C8695A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE54BB828092FBA00C8695A /* LaunchScreen.storyboard */; };
 		BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BC6280939BA00C8695A /* ViewModel.swift */; };
+		BEE54BD12809461300C8695A /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE54BD02809461300C8695A /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BEE54BB928092FBA00C8695A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEE54BBB28092FBA00C8695A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE54BC6280939BA00C8695A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BEE54BD02809461300C8695A /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BEE54BB128092FB800C8695A /* ViewController.swift */,
+				BEE54BD02809461300C8695A /* SectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				BEE54BB228092FB800C8695A /* ViewController.swift in Sources */,
 				BEE54BAE28092FB800C8695A /* AppDelegate.swift in Sources */,
+				BEE54BD12809461300C8695A /* SectionHeaderView.swift in Sources */,
 				BEE54BC7280939BA00C8695A /* ViewModel.swift in Sources */,
 				BEE54BB028092FB800C8695A /* SceneDelegate.swift in Sources */,
 			);

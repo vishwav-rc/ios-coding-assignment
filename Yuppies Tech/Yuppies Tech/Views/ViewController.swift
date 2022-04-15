@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     enum Constants {
         static let cellIdentifier = "identifier"
+        static let sectionHeader = "header"
     }
 
     @IBOutlet weak var collectionView: UICollectionView?
@@ -31,6 +32,21 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        guard kind == UICollectionView.elementKindSectionHeader,
+              let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: Constants.sectionHeader,
+                for: indexPath) as? SectionHeaderView else {
+            fatalError("Unexpected element kind")
+        }
+        headerView.titleLabel?.text = viewModel.sectionHeader(section: indexPath.section)
+        return headerView
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         viewModel.noOfSections
     }

@@ -19,4 +19,8 @@ class ViewModel {
     var lastItemInSection: Int {
         2
     }
+    
+    func sectionHeader(section: Int) -> String {
+        "Section \(section + 1)"
+    }
 }

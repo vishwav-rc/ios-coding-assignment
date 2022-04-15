@@ -36,9 +36,24 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2ZA-oY-wsc">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="2ZA-oY-wsc" customClass="SectionHeaderView" customModule="Yuppies_Tech" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMf-zu-XZZ">
+                                            <rect key="frame" x="10" y="10" width="58" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wMf-zu-XZZ" firstAttribute="leading" secondItem="2ZA-oY-wsc" secondAttribute="leading" constant="10" id="1kX-Ru-PXI"/>
+                                        <constraint firstItem="wMf-zu-XZZ" firstAttribute="centerY" secondItem="2ZA-oY-wsc" secondAttribute="centerY" id="QL9-C6-yIW"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="wMf-zu-XZZ" id="RbS-nQ-IZZ"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="xF6-qe-exy"/>
