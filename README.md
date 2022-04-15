@@ -16,6 +16,6 @@ Implement a scrolling list view like popular social media apps (Instagram/Snapch
 
 #### Demo Screenshots
 
-![screenshots of app](/ScreenShots/iPhone 12 Pro.png)
+![screenshots of app](/Demo/screenShots/iPhone.png)
 
-![screenshots of app](/ScreenShots/iPad Pro (9.7-inch).png)
+![screenshots of app](/Demo/screenShots/iPad_Portrait.png)
