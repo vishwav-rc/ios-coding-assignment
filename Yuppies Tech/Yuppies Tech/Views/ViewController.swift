@@ -15,22 +15,51 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView?
     
+    private var viewModel: ViewModel = ViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpCollectionView()
+    }
+    
+    private func setUpCollectionView() {
+        collectionView?.contentInset = UIEdgeInsets(top: 0,
+                                                    left: 10,
+                                                    bottom: 30,
+                                                    right :10)
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        viewModel.noOfSections
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        viewModel.noOfItemsInSection
+    }
+        
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: Constants.cellIdentifier,
             for: indexPath)
         cell.backgroundColor = UIColor.green
         return cell
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = UIScreen.main.bounds.width - 10
+        if indexPath.row == viewModel.lastItemInSection {
+            let width = screenWidth - 10
+            return CGSize(width: width, height: width)
+        } else {
+            let width = (screenWidth/2) - 10
+            return CGSize(width: width, height: width)
+        }
     }
 }

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class ViewModel {
+    var noOfSections: Int {
+        10
+    }
+    
+    var noOfItemsInSection: Int {
+        3
+    }
+    
+    var lastItemInSection: Int {
+        2
+    }
+}
