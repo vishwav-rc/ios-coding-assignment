@@ -62,8 +62,15 @@ extension ViewController: UICollectionViewDataSource {
                 for: indexPath) as? ItemViewCell else {
             fatalError("Unexpected cell")
         }
-        cell.imageView?.backgroundColor = .yellow
+        cell.backgroundColor = UIColor.black.withAlphaComponent(0.10)
+        cell.loadRandomImage(url: viewModel.getImageUrl(indexPath: indexPath,
+                                                        size: cell.frame.size))
         return cell
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        collectionView?.collectionViewLayout.invalidateLayout()
     }
 }
 

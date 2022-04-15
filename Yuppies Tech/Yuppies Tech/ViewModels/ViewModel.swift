@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ViewModel {
     var noOfSections: Int {
@@ -22,5 +23,11 @@ class ViewModel {
     
     func sectionHeader(section: Int) -> String {
         "Section \(section + 1)"
+    }
+    
+    func getImageUrl(indexPath: IndexPath, size: CGSize) -> URL? {
+        let id = "2\(indexPath.section)\(indexPath.row)"
+        let url = "https://picsum.photos/\(id)/\(Int(size.width))"
+        return URL(string: url)
     }
 }
